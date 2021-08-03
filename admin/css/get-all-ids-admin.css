@@ -1,0 +1,144 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .wrap {
+     background-color:rgba(0,0,0,0.03);
+     padding:5px 5px 15px 20px;
+     margin-right:10px;
+ }
+
+.container {
+    margin-right:10px;
+    background-color:white;
+    padding:10px;
+}
+.row,
+.pagination {
+    display:flex;
+    flex-wrap: wrap;
+}
+.pagination {
+    flex:1;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.pagination ul {
+    flex:1;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.pagination ul:first-child {
+    flex:3;
+    justify-content: flex-start;
+}
+.pagination ul li a {
+    padding:0.3rem 0.4rem;
+    margin: 0 0.6rem;
+    background-color:#f5f5f5;
+    font-size: 0.7rem;
+    opacity: 0.65;
+}
+.pagination ul li a.active {
+    color:red;
+}
+.content {
+    display: block;
+    width: 100%;
+}
+.content .line {
+    background-color:rgba(0,0,0,0.03);
+    display:flex;
+    align-items:center;
+    margin:10px;
+    padding:0;
+    
+}
+.content .line p,
+.content .line div {
+    padding:10px;
+    margin:0;
+}
+.nav-container {
+    flex: 1 auto;
+    display:flex;
+    align-items:center;
+    margin:0 10px;
+    padding-right:10px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.03);
+}
+.nav-container h4 {
+    padding:0 0 0.2em 0;
+    margin-right: 0.5rem;
+}
+.nav-container .nav-list {
+    display:flex;
+    align-items:center;
+    text-align:left;
+    margin:0;
+    padding:0;
+}
+.nav-container .search-form input[type="text"] {
+    margin: 0;
+    border-radius: 0;
+}
+input[type="text"]::placeholder {
+    color: #888;
+    font-size: 0.9em;
+}
+.nav-container .search-form button {
+    background-color: rgba(0,0,0,0.08);
+    border: 0;
+    outline: 0;
+    margin: 0;
+    margin-left: -4px;
+    height: 30px;
+    padding: 0 0.8rem;
+    cursor: pointer;
+    border: 1px solid #8c8f94;
+}
+.nav-container .search-form button:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+.nav-container ul li {
+    flex:1;
+    padding: 5px 15px;
+}
+.nav-container ul li.active a {
+    color: red;
+}
+
+@media (max-width: 1199.98px) {
+    .row,
+    .nav-container,
+    .nav-container .nav-list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .nav-container ul li {
+        padding: 5px 8px;
+    }
+    .pagination ul:first-child {
+        flex:2;
+    }
+}
+@media (max-width: 767.98px) {
+    .nav-container .search-form button {
+        display: none;
+    }
+    input[type="text"] {
+        display: block !important;
+        width: 100%;
+        margin: 0.8rem auto !important;
+    }
+    .pagination {
+        display:block;
+        align-items: unset;
+        justify-content: unset;
+    }
+    .pagination ul {
+        justify-content: flex-start;
+    }
+}

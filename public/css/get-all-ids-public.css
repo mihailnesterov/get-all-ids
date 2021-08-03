@@ -1,0 +1,84 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+#wp-admin-bar-get-all-ids-admin-bar-item {
+    border-top: 0;
+    min-width: 220px;
+}
+#wp-admin-bar-get-all-ids-admin-bar-item a b {
+    color:red;
+    font-weight:600;
+    font-size: 14px;
+}
+.get-all-ids-toolbar-container {
+    display: none;
+    background-color:#1D2327;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.get-all-ids-toolbar-container .overflow-y {
+    overflow-y: auto;
+    max-height: 500px!important;
+}
+.get-all-ids-toolbar-container .attach-pannel {
+    background-color:#1D2327;
+    border-bottom: 1px #fff dotted;
+}
+.get-all-ids-toolbar-container .attach-pannel p {
+    border: 0;
+}
+.get-all-ids-toolbar-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.get-all-ids-toolbar-row p {
+    flex:1;
+    padding: 0 10px !important;
+    border-left: 1px #fff dotted;
+    margin: 3px 0 !important;
+}
+.get-all-ids-toolbar-row p:first-child {
+    flex:5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1px !important;
+    border-left: 0 !important;
+}
+.get-all-ids-toolbar-row p:first-child span {
+    background-color:#1D2327;
+    border-bottom: 1px solid #fff !important; 
+    line-height: 0.1em !important;
+}
+.get-all-ids-toolbar-row p:first-child span:first-child {
+    border-bottom: 0 !important; 
+    line-height: auto;
+}
+/*.get-all-ids-toolbar-row:last-child p {
+    border: 0;
+}*/
+.get-all-ids-toolbar-row p b,
+.get-all-ids-toolbar-row p b a {
+    color:#1D2327;
+    font-weight:600 !important;
+    text-align: center;
+}
+.get-all-ids-toolbar-row p b a {
+    padding: 0 15px !important;
+    background-color:#eed6a7 !important;
+    margin: 5px -5px 5px 0 !important;
+    text-align: center;
+    border-radius: 5px !important;
+    min-width: 25px;
+}
+.get-all-ids-toolbar-row p b a:hover {
+    opacity: 0.85;
+}
+.text-right {
+    text-align: right;
+}
+#get-all-ids-toolbar-attach {
+    cursor: pointer;
+}
