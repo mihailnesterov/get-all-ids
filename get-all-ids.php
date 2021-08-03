@@ -14,8 +14,8 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Get All IDs
- * Plugin URI:        wp-get-all-ids.com
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Plugin URI:        https://github.com/mihailnesterov/get-all-ids
+ * Description:       Wordpress Plugin helps to get ID of any WP post, page, taxonomy, tag, category, WooCommerce product, any custom type.
  * Version:           1.0.0
  * Author:            Mihail Nesterov
  * Author URI:        https://github.com/mihailnesterov
